@@ -14,7 +14,7 @@ const Page4 = () => {
         <div>
             <div className='d-flex'>
                 <Nav />
-                <ProgressBar className='progress' variant='warning' now={20} />
+                <ProgressBar className='progress' striped variant='warning' now={20} />
                 <p className='mx-3 mt-1'>1 / 6</p>
             </div>
 
@@ -47,14 +47,14 @@ const Page4 = () => {
                     {
                         !button ? <motion.button
 
-                        whileTap={{ scale: 1.3, background: "#51E179" }}
-                        onClick={() => {
-                            setTimeout(function () {
-                                setbutton(true)
-                            }, 2000);
-                            Setshow(true)
+                            whileTap={{ scale: 1.3, background: "#51E179" }}
+                            onClick={() => {
+                                setTimeout(function () {
+                                    setbutton(true)
+                                }, 2000);
+                                Setshow(true)
 
-                        }} className='hej-button '>4<span className='px-5'>God dag</span></motion.button> : null
+                            }} className='hej-button '>4<span className='px-5'>God dag</span></motion.button> : null
                     }
                 </div>
                 {

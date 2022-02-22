@@ -18,7 +18,8 @@ import Exercise6 from './Components/Lesson1/Exercise6/Exercise6';
 import Exercise3a from './Components/Lesson1/Exercise3/Exercise3a';
 import Exercise3b from './Components/Lesson1/Exercise3/Exercise3b';
 import AuthProvider from './Context/AuthProvider';
-import Test from './Components/Test/Test';
+import Exercise6b from './Components/Lesson1/Exercise6/Exercise6b';
+
 
 
 function App() {
@@ -43,8 +44,9 @@ function App() {
             <Route path="/e4" element={<Exercise4 />} />
             <Route path="/e5" element={<Exercise5 />} />
             <Route path="/e6" element={<Exercise6 />} />
+            <Route path="/e6b" element={<Exercise6b />} />
 
-            <Route path='/test' element={<Test />} />
+
 
           </Routes>
         </BrowserRouter>

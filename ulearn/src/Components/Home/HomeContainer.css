@@ -61,7 +61,7 @@
 }
 .line-1
 {
-    height: 150px;
+    height: 80px;
     width: 4px;
     background-color: #24344F;
     margin-left: 160px;
@@ -71,7 +71,7 @@
 {
     padding: 20px;
     background-color: white;
-    width: 650px;
+    width: 800px;
     border-radius: 5px;
     text-align: start;
     height: 160px ;
@@ -85,7 +85,7 @@
 {
     padding: 20px;
     background-color: white;
-    width: 650px;
+    width: 800px;
     border-radius: 5px;
     margin-top: 20px;
     height: 160px;

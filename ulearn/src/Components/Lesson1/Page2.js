@@ -48,23 +48,25 @@ const Page2 = () => {
                     {
                         !button ? <motion.button
 
-                        whileTap={{ scale: 1.3, background: "#51E179" }}
-                        onClick={() => {
-                            setTimeout(function () {
-                                setbutton(true)
-                            }, 2000);
-                            Setshow(true)
+                            whileTap={{ scale: 1.3, background: "#51E179" }}
+                            onClick={() => {
+                                setTimeout(function () {
+                                    setbutton(true)
+                                }, 2000);
+                                Setshow(true)
 
-                        }} className='hejda-button '>2<span className='px-5'>Hej då </span></motion.button> : null
+                            }} className='hejda-button '>2<span className='px-5'>Hej då </span></motion.button> : null
                     }
                 </div>
-                {
-                    button ? <button className='continue-button btn-lg' onClick={() => { }}
+                <div className='next'>
+                    {
+                        button ? <button className='continue-button btn-lg' onClick={() => { }}
 
-                    >
-                        <Link className='continue-btn-style' to='/e1p3'>CONTINUE</Link>
-                    </button> : null
-                }
+                        >
+                            <Link className='continue-btn-style' to='/e1p3'>CONTINUE</Link>
+                        </button> : null
+                    }
+                </div>
             </div>
         </div>
     );

@@ -20,10 +20,10 @@ const HomeContainer = () => {
             <div className="lesson d-flex">
                 <div>
 
-                    <div className="ellipse">
+                    <div className="ellipse" style={{ background: lession1 ? "green" : '#E69C05' }}>
 
                     </div>
-                    <div className="ellipse-1">
+                    <div className="ellipse-1" style={{ background: lession1 ? "lightgreen" : '#FCD688' }}>
 
                     </div>
 
