@@ -1,3 +1,10 @@
+.exercise-4
+{
+    background-image: url("https://i.ibb.co/FBT6f2B/background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 84vh;
+}
 .video
 {
 height: 120px;
@@ -28,13 +35,9 @@ input{
     background: transparent;
     width: 60px;
     height: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     align-items: center;
     justify-content: center;
     padding: 10px;
 }
 
-input :invalid
-{
-    background-color: red;
-}

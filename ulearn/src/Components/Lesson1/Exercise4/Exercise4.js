@@ -17,7 +17,7 @@ const style = {
     transform: 'translate(-50%, -50%)',
     width: 400,
     bgcolor: '#fbc556',
-    border: '2px solid #000',
+    border: '1px solid #000',
     boxShadow: 24,
     p: 4,
     borderRadius: '5%'
@@ -61,7 +61,7 @@ const Exercise4 = () => {
                 <ProgressBar striped variant='warning' now={80}></ProgressBar>
                 <p className='mt-1 mx-2' >4/6</p>
             </div>
-            <div className='exercise-5'>
+            <div className='exercise-4'>
                 <h1 className='py-3'>Myra Granberg</h1>
                 <div className='video'>
                     <ReactPlayer
@@ -72,7 +72,7 @@ const Exercise4 = () => {
                     />
                 </div>
 
-                <h4 className='mt-1 pt-5'>Fill in the gaps with the correct subject pronouns</h4>
+                <h4 className='mt-1 pt-3'>Fill in the gaps with the correct subject pronouns</h4>
 
                 <div className='text-area d-flex '>
                     <div className='blank-area px-3'>
