@@ -66,7 +66,7 @@ const Exercise3b = () => {
                 </div>
             </div>
 
-            <div className='continue-section ex-3 next'>
+            <div className='continue-section ex-3 next pt-2'>
                 <button className='continue-btn  btn-lg'>
                     <Link className='btn-style' to='/e4'>Continue</Link>
                 </button>

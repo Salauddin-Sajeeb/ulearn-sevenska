@@ -63,11 +63,7 @@ const Quiz = () => {
 
                     }
 
-                    <div>
-                        <button className='continue-button btn-lg '
 
-                        ><Link className='continue-btn-style' to='/e3'>CONTINUE</Link></button>
-                    </div>
                 </div>
             ) : (
 
@@ -108,6 +104,14 @@ const Quiz = () => {
                     </div>
                 </div>
             )}
+            {
+                showResults ?
+                    <div className='continue mt-3'>
+                        <button className='continue-button btn-lg '
+
+                        ><Link className='continue-btn-style' to='/e3'>CONTINUE</Link></button>
+                    </div> : null
+            }
         </div>
     );
 };

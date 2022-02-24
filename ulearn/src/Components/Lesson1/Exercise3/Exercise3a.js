@@ -67,7 +67,7 @@ const Exercise3a = () => {
                 </div>
             </div>
 
-            <div className='continue-section ex-3 .next'>
+            <div className='continue-section ex-3 next pt-2'>
                 <button className='continue-btn  btn-lg'>
                     <Link className='btn-style' to='/e3p2'>Continue</Link>
                 </button>

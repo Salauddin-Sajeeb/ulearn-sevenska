@@ -57,7 +57,7 @@ const Exercise6 = () => {
             </div>
             {result ? (
                 /* 4. Final Results */
-                <div className="final-results pt-5 ">
+                <div className="final-results pt-5">
 
                     <h2>
                         You Scored {score}/2
@@ -95,7 +95,7 @@ const Exercise6 = () => {
                                 Hey! Great to see you!</p>
                         </div>
                         <div className="d-flex girl">
-                            <p className='mt-4 paragraph '> <input type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
+                            <p className='mt-4 paragraph '> <input className='input-6b' type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
 
                                 name='input1'
                                 value={inputVal.input1}
@@ -118,7 +118,7 @@ const Exercise6 = () => {
                         <div className='guy d-flex'>
                             <img className='guy-img' src="https://i.ibb.co/HD1Ym9w/guy.png" alt="" />
 
-                            <p className='mt-4 paragraph'>Jo <input type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
+                            <p className='mt-4 paragraph'>Jo <input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
 
                                 name='input2'
                                 value={inputVal.input2}
@@ -175,7 +175,7 @@ const Exercise6 = () => {
                 </div>)}
             {
                 result ?
-                    <div className='continue mt-3 ex5-result next'>
+                    <div className='continue mt-3 ex5-result next ml-5'>
                         <button className='continue-button btn-lg bg-warning '
 
                         ><Link className='continue-btn-style' to='/e6b'>CONTINUE</Link></button>

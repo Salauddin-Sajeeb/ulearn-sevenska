@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -21,39 +21,116 @@ const style = {
     boxShadow: 24,
     p: 4,
     borderRadius: '5%'
-
-
 };
-
 
 const Exercise4 = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const [ans, setAns] = useState([])
+    const [wrong, setWrong] = useState(false)
+    const [rightAns, setRightAns] = useState({
+        one: "",
+        two: "",
+        three: "",
+        four: "",
+        five: "",
+        six: "",
+        seven: "",
+        eight: "",
+        nine: "",
+        ten: ""
+    })
+    const answers = [
+        { val: "de" },
+        { val: "de" },
+        { val: "du" },
+        { val: "du" },
+        { val: "vi" },
+        { val: "du" },
+        { val: "de" },
+        { val: "vi" },
+        { val: "de" },
+        { val: "jag" },
+    ]
+    useEffect(() => {
+        setAns({ ...ans, answers })
+    }, [])
 
-
-    const jagHandle = (e) => {
-        e.preventDefault();
+    const handleChange = (e) => {
+        let name = e.target.name;
         let value = e.target.value;
-        if (value === 'jag') {
 
-        }
-        else {
-            alert('wrong answer!')
-            e.target.value = '';
+        setRightAns({ ...rightAns, [name]: value })
+    }
+
+    const submitAnswer = () => {
+        let item = answers.map(itm => {
+            return itm
+        });
+        const { one, two, three } = rightAns;
+
+        for (let it of answers) {
+            switch (it) {
+                case one:
+                    if (true) {
+                        console.log("answer1")
+                    }
+                    else {
+                        console.log("wrong answer1")
+
+                    }
+                    break;
+                case "answer2":
+                    console.log("answer2..")
+                    break;
+                case "answer3":
+                    console.log("answer3...")
+                    break;
+                default:
+                    console.log("blank...")
+            }
         }
     }
-    const vi = (e) => {
-        e.preventDefault();
-        let value = e.target.value;
-        if (value === 'vi') {
 
-        }
-        else {
-            alert('wrong answer!')
-            e.target.value = '';
-        }
+    const handleRightAnswer = (e) => {
+        let name = e.target.name;
+        let value = e.target.value;
+
+        setAns({ ...ans, [name]: value })
     }
+
+
+    const handleAnswer = (e) => {
+        let item = answers.map(itm => {
+            return itm.name
+        });
+        let name = e.target.name;
+        let value = e.target.value;
+        console.log(item)
+
+        switch (name) {
+            case 'one':
+                if (name !== "one") {
+                    console.log("wrong ans")
+                }
+                setRightAns({ ...rightAns, [name]: value })
+                break;
+            case 'two':
+                setRightAns({ ...rightAns, [name]: value })
+                break;
+            case 'three':
+                setRightAns({ ...rightAns, [name]: value })
+                break;
+            default:
+                console.log("blank....")
+        }
+
+    }
+
+
+
+
     return (
         <div>
             <div className="d-flex">
@@ -62,21 +139,26 @@ const Exercise4 = () => {
                 <p className='mt-1 mx-2' >4/6</p>
             </div>
             <div className='exercise-4'>
-                <h1 className='py-3'>Myra Granberg</h1>
+                <h1 className='pt-4'>Myra Granberg</h1>
                 <div className='video'>
                     <ReactPlayer
                         url='https://www.youtube.com/watch?v=zFw-zYKO2rg'
                         height='160px'
-                        width='550px'
+                        width='530px'
                         controls
                     />
                 </div>
 
-                <h4 className='mt-1 pt-3'>Fill in the gaps with the correct subject pronouns</h4>
+                <h4 className='mt-1 pt-5'>Fill in the gaps with the correct subject pronouns</h4>
 
                 <div className='text-area d-flex '>
                     <div className='blank-area px-3'>
-                        Baby, <input type="text" /> får säga vad <input type="text" /> vill,
+                        Baby,<input
+                            style={{ borderBottom: wrong ? "2px solid red" : "2px solid green" }}
+                            type="text" name="one"
+                            value={rightAns.one}
+                            onChange={handleChange}
+                        /> får säga vad <input type="text" /> vill,
                         Ingenting som <input type="text" />  ska tänka på
                         Skrik till hela världen "<input type="text" /> är min",
                         Inget annat kommer spela roll
@@ -115,10 +197,10 @@ const Exercise4 = () => {
                 </div>
                 <div className='button-sec'>
                     <div>
-                        <button draggable='true' className='btn btn-secondary mx-5 px-5 '>jag</button>
+                        <button onClick={handleAnswer} className='btn btn-secondary mx-5 px-5 '>jag</button>
                         <button className='btn btn-secondary mx-5 px-5'>de</button>
                         <button className='btn btn-secondary mx-5 px-5'>hon</button>
-                        <button className='btn btn-secondary mx-5 px-5'>vi</button>
+                        <button className='btn btn-secondary mx- px-5'>vi</button>
                         <button className='btn btn-secondary mx-5 px-5'>de</button>
                     </div>
                 </div>

@@ -101,11 +101,11 @@ const Exercise5 = () => {
                     <div className='blank-area px-3'>
 
 
-                        <input type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
+                        <input className='input-6b' type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
 
                             name='input1'
                             value={inputVal.input1}
-                            onChange={(e) => {
+                            onInput={(e) => {
 
                                 setInputVal({ ...inputVal, input1: e.target.value })
                                 if (inputVal.input1 === expectedVal.expVal1) {
@@ -120,11 +120,11 @@ const Exercise5 = () => {
                         />
                         ska älska dig tills mitt hjärta går under
                         Uti alla stunder, blixtar och dunder
-                        Lova mig att  <input type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
+                        Lova mig att  <input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
 
                             name='input2'
                             value={inputVal.input2}
-                            onChange={(e) => {
+                            onInput={(e) => {
                                 setInputVal({ ...inputVal, input2: e.target.value })
                                 if (inputVal.input2 === expectedVal.expVal2) {
                                     setWrong2(false)
@@ -136,7 +136,7 @@ const Exercise5 = () => {
                             }}
 
                         /> räknar sekunder
-                        Åh, baby, <input type='text' style={{ color: wrong3 ? "red" : "green", fontWeight: "bold" }}
+                        Åh, baby, <input className='input-6b' type='text' style={{ color: wrong3 ? "red" : "green", fontWeight: "bold" }}
 
                             name='input3'
                             value={inputVal.input3}
@@ -155,7 +155,7 @@ const Exercise5 = () => {
                         />  är alltid med dig
                         Älska dig tills mitt hjärta går under
                         Uti alla stunder, med blixtar och dunder
-                        Lova mig att <input type='text' style={{ color: wrong4 ? "red" : "green", fontWeight: "bold" }}
+                        Lova mig att <input className='input-6b' type='text' style={{ color: wrong4 ? "red" : "green", fontWeight: "bold" }}
 
                             name='input4'
                             value={inputVal.input4}
@@ -171,7 +171,7 @@ const Exercise5 = () => {
                             }}
 
                         />  räknar sekunder
-                        För, baby, <input type='text' style={{ color: wrong5 ? "red" : "green", fontWeight: "bold" }}
+                        För, baby, <input className='input-6b' type='text' style={{ color: wrong5 ? "red" : "green", fontWeight: "bold" }}
 
                             name='input5'
                             value={inputVal.input5}

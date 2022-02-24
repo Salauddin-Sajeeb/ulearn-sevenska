@@ -94,7 +94,7 @@ const Exercise6b = () => {
                         <div className='guy d-flex'>
                             <img className='guy-img' src="https://i.ibb.co/HD1Ym9w/guy.png" alt="" />
 
-                            <p className='mt-4 paragraph '><input className='input-6b' type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
+                            <p className='mt-4 paragraph  '><input className='input-6b' type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
 
                                 name='input1'
                                 value={inputVal.input1}
@@ -114,23 +114,25 @@ const Exercise6b = () => {
                                 Goodbye!</p>
                         </div>
                         <div className="d-flex girl">
-                            <p className='mt-4 paragraph '><input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
+                            <div className='my-2'>
+                                <p className='mt-4 paragraph '><input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
 
-                                name='input2'
-                                value={inputVal.input2}
-                                onChange={(e) => {
-                                    setInputVal({ ...inputVal, input2: e.target.value })
-                                    if (inputVal.input2 === expectedVal.expVal2) {
-                                        setWrong2(false)
-                                        setScore(score + 1)
-                                        console.log(score)
-                                    }
-                                    else
-                                        setWrong2(true)
-                                }}
+                                    name='input2'
+                                    value={inputVal.input2}
+                                    onChange={(e) => {
+                                        setInputVal({ ...inputVal, input2: e.target.value })
+                                        if (inputVal.input2 === expectedVal.expVal2) {
+                                            setWrong2(false)
+                                            setScore(score + 1)
+                                            console.log(score)
+                                        }
+                                        else
+                                            setWrong2(true)
+                                    }}
 
-                            /> ! vi ses!  <br />
-                                Bye, see you later</p>
+                                /> ! vi ses!  <br />
+                                    Bye, see you later</p>
+                            </div>
                             <img className='guy-img' src="https://i.ibb.co/D8BHLmV/girl.png" alt="" />
                         </div>
 
