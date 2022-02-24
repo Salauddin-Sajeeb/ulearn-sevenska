@@ -6,7 +6,6 @@ const Quiz = () => {
     const [showResults, setShowResults] = useState(false);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
-    const [bgColor, setbgcolor] = useState('')
     const [currentImg, setCurrentImg] = useState(0)
     const images = [
         'https://i.ibb.co/ZHpVN5D/hej.png', 'https://i.ibb.co/8K9fwMF/hejda.png', 'https://i.ibb.co/xmkktZf/god-m.png', ' https://i.ibb.co/Jsndnjz/god-d.png',
@@ -23,7 +22,7 @@ const Quiz = () => {
         // Increment the score
         if (isCorrect) {
             setScore(score + 1);
-            setbgcolor({ bgColor: 'green' })
+
         }
 
         if (currentQuestion + 1 < Datas.length) {
@@ -31,14 +30,6 @@ const Quiz = () => {
         } else {
             setShowResults(true);
         }
-    };
-
-    /* Resets the game back to default */
-    const restartGame = () => {
-        setScore(0);
-        setCurrentQuestion(0);
-        setShowResults(false);
-        setCurrentImg(0)
     };
 
     return (
@@ -84,7 +75,7 @@ const Quiz = () => {
                                 Datas[currentQuestion].options.map((option) => {
                                     return (
                                         <button
-                                            style={{ backgroundColor: bgColor }}
+
                                             key={option.id}
                                             onClick={() => {
 

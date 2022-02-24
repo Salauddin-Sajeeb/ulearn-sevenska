@@ -19,7 +19,7 @@ const Nav = () => {
         setAnchorEl(null);
     };
     return (
-        <div className='container mt-2 '>
+        <div className='container mt-2 bg-dark '>
             <img className='logo' src="https://i.ibb.co/qJG3vwd/logo.png" alt="" />
             <div>
                 <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>

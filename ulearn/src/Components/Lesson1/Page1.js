@@ -12,7 +12,7 @@ const Page1 = () => {
 
     return (
         <div>
-            <div className='d-flex'>
+            <div className='d-flex bg-dark'>
                 <Nav />
                 <ProgressBar className='progress' striped variant='warning' now={5} />
                 <p className='mx-3 mt-1'><b>1 / 6</b></p>

@@ -85,17 +85,17 @@ const Exercise5 = () => {
                 </div>
 
             ) : (<div className='exercise-5'>
-                <h1 className='pt-4'>Myra Granberg</h1>
+                <h1 className='pt-4 '>Myra Granberg</h1>
                 <div className='video'>
                     <ReactPlayer
                         url='https://www.youtube.com/watch?v=aVNuoeh0Ovw'
-                        height='180px'
+                        height='200px'
                         width='550px'
                         controls
                     />
                 </div>
 
-                <h4 className='mt-5 pt-4'>Fill in the gaps with the correct subject pronouns</h4>
+                <h4 className='mt-5 pt-5'>Fill in the gaps with the correct subject pronouns</h4>
 
                 <div className='text-area d-flex  '>
                     <div className='blank-area px-3'>

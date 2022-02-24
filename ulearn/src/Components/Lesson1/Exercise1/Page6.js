@@ -64,11 +64,13 @@ const Page6 = () => {
                             }} className='hej-button '>6<span className='px-5'>Tack</span></motion.button> : null
                     }
                 </div>
-                {
-                    button ? <button className='continue-button btn-lg '
+                <div className="next">
+                    {
+                        button ? <button className='continue-button btn-lg '
 
-                    ><Link className='continue-btn-style' to='/e2p1'>CONTINUE</Link></button> : null
-                }
+                        ><Link className='continue-btn-style' to='/e2p1'>CONTINUE</Link></button> : null
+                    }
+                </div>
             </div>
         </div>
     );

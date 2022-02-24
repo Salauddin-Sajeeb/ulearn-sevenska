@@ -57,11 +57,13 @@ const Page5 = () => {
                             }} className='hej-button'>5<span className='px-5'>God kväll</span></motion.button> : null
                     }
                 </div>
-                {
-                    button ? <button className='continue-button btn-lg '
+                <div className="next">
+                    {
+                        button ? <button className='continue-button btn-lg '
 
-                    ><Link className='continue-btn-style' to='/e1p6'>CONTINUE</Link></button> : null
-                }
+                        ><Link className='continue-btn-style' to='/e1p6'>CONTINUE</Link></button> : null
+                    }
+                </div>
             </div>
         </div>
     );

@@ -112,7 +112,7 @@ const Exercise4 = () => {
         switch (name) {
             case 'one':
                 if (name !== "one") {
-                    console.log("wrong ans")
+                    setWrong(true)
                 }
                 setRightAns({ ...rightAns, [name]: value })
                 break;
@@ -156,8 +156,7 @@ const Exercise4 = () => {
                         Baby,<input
                             style={{ borderBottom: wrong ? "2px solid red" : "2px solid green" }}
                             type="text" name="one"
-                            value={rightAns.one}
-                            onChange={handleChange}
+                            readOnly value={rightAns.one}
                         /> får säga vad <input type="text" /> vill,
                         Ingenting som <input type="text" />  ska tänka på
                         Skrik till hela världen "<input type="text" /> är min",
