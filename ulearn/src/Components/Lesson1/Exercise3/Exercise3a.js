@@ -40,10 +40,10 @@ const data = [
 const Exercise3a = () => {
     return (
         <div>
-            <div className="d-flex">
+            <div className='d-flex bg-dark'>
                 <Nav />
-                <ProgressBar striped variant='warning' now={70}></ProgressBar>
-                <p className='mt-1 mx-2' >3/6</p>
+                <ProgressBar className='progress mt-3 mx-5' striped variant='warning' now={70} />
+                <p className='mx-1 mt-2 text-white'>3 / 6</p>
             </div>
 
             <div className='exercise-3 pt-3 '>

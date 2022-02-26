@@ -14,8 +14,8 @@ const Page1 = () => {
         <div>
             <div className='d-flex bg-dark'>
                 <Nav />
-                <ProgressBar className='progress' striped variant='warning' now={5} />
-                <p className='mx-3 mt-1'><b>1 / 6</b></p>
+                <ProgressBar className='progress mt-3 mx-5' striped variant='warning' now={5} />
+                <p className='mx-1 mt-2 text-white'><b>1 / 6</b></p>
             </div>
 
 

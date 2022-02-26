@@ -14,10 +14,10 @@ const Page2 = () => {
 
     return (
         <div className=''>
-            <div className='d-flex'>
+            <div className='d-flex bg-dark'>
                 <Nav />
-                <ProgressBar className='progress' striped variant='warning' now={10} />
-                <p className='mx-3 mt-1'>1 / 6</p>
+                <ProgressBar className='progress mt-3 mx-5' striped variant='warning' now={10} />
+                <p className='mx-1 mt-2 text-white'>1 / 6</p>
             </div>
             <div className='page-2'>
                 <h1 className='py-4'>Your first Swedish words! Click to listen</h1>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ProgressBar } from 'react-bootstrap';
 import Nav from '../Lesson1-nav/Nav';
 import Box from '@mui/material/Box';
@@ -47,13 +47,36 @@ const Exercise6 = () => {
         else
             SetResult(true)
     }
+    const SeeScore = () => {
+        if (score > 2) {
+            setScore(2)
+        }
+    }
+    useEffect(() => {
+        if (inputVal.input1 === expectedVal.expVal1) {
+            setWrong1(false)
+            setScore(score + 1)
+            console.log(score)
+        }
+        else
+            setWrong1(true)
+    }, [inputVal.input1])
+    useEffect(() => {
+        if (inputVal.input2 === expectedVal.expVal2) {
+            setWrong2(false)
+            setScore(score + 1)
+            console.log(score)
+        }
+        else
+            setWrong2(true)
+    }, [inputVal.input2])
 
     return (
         <div>
-            <div className="d-flex">
+            <div className='d-flex bg-dark'>
                 <Nav />
-                <ProgressBar striped variant='warning' now={95}></ProgressBar>
-                <p className='mt-1 mx-2' >6/6</p>
+                <ProgressBar className='progress mt-3 mx-5' striped variant='warning' now={95} />
+                <p className='mx-1 mt-2 text-white'>6 / 6</p>
             </div>
             {result ? (
                 /* 4. Final Results */
@@ -165,7 +188,11 @@ const Exercise6 = () => {
                         </div>
 
                         <div className='continue'>
-                            <button onClick={verifyResult} className='continue-button  btn-lg'>
+                            <button onClick={() => {
+                                verifyResult()
+                                SeeScore()
+
+                            }} className='continue-button  btn-lg'>
                                 NEXT
                             </button>
                         </div>

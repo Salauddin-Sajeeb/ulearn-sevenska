@@ -1,6 +1,7 @@
-.container
+.home-contain
 {
     display: flex;
+   height: 59px;
 }
 
 .logo
@@ -9,8 +10,13 @@
     left: 0;
     object-fit: cover;
     top: 0;
-    width: 352px;
+    width: 302px;
+    margin-left: 4px;
 
+}
+.home-nav
+{
+    margin-left: 120px;
 }
 
 .header
@@ -27,4 +33,15 @@
 {
     text-decoration: none;
     margin-left: 50px;
+}
+
+.home-bg
+{
+  width: 140px;
+    background-color: #FAB424;
+}
+.home-img
+{
+    height: 25px;
+    width: 40px;
 }

@@ -133,10 +133,10 @@ const Exercise4 = () => {
 
     return (
         <div>
-            <div className="d-flex">
+            <div className='d-flex bg-dark'>
                 <Nav />
-                <ProgressBar striped variant='warning' now={80}></ProgressBar>
-                <p className='mt-1 mx-2' >4/6</p>
+                <ProgressBar className='progress mt-3 mx-5' striped variant='warning' now={80} />
+                <p className='mx-1 mt-2 text-white'>4 / 6</p>
             </div>
             <div className='exercise-4'>
                 <h1 className='pt-4'>Myra Granberg</h1>

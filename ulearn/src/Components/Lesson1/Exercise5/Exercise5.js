@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -51,6 +51,11 @@ const Exercise5 = () => {
         expVal4: "vi",
         expVal5: "jag",
     }
+    const SeeScore = () => {
+        if (score > 5) {
+            setScore(5)
+        }
+    }
     const verifyResult = () => {
         if (inputVal.input1 === "" || inputVal.input2 === "" || inputVal.input3 === "" || inputVal.input4 === "" || inputVal.input5 === "")
 
@@ -58,14 +63,61 @@ const Exercise5 = () => {
         else
             SetResult(true)
     }
+    useEffect(() => {
+        if (inputVal.input1 === expectedVal.expVal1) {
+            setWrong1(false)
+            setScore(score + 1)
+            console.log(score)
+        }
+        else
+            setWrong1(true)
+    }, [inputVal.input1])
+    useEffect(() => {
+        if (inputVal.input2 === expectedVal.expVal2) {
+            setWrong2(false)
+            setScore(score + 1)
+            console.log(score)
+        }
+        else
+            setWrong2(true)
+    }, [inputVal.input2])
+    useEffect(() => {
+        if (inputVal.input3 === expectedVal.expVal3) {
+            setWrong3(false)
+            setScore(score + 1)
+            console.log(score)
+        }
+        else
+            setWrong3(true)
+    }, [inputVal.input3])
+
+    useEffect(() => {
+        if (inputVal.input4 === expectedVal.expVal4) {
+            setWrong4(false)
+            setScore(score + 1)
+            console.log(score)
+        }
+        else
+            setWrong4(true)
+    }, [inputVal.input4])
+    useEffect(() => {
+        if (inputVal.input5 === expectedVal.expVal5) {
+            setWrong5(false)
+            setScore(score + 1)
+            console.log(score)
+        }
+
+        else
+            setWrong5(true)
+    }, [inputVal.input5])
 
 
     return (
         <div>
-            <div className="d-flex">
+            <div className='d-flex bg-dark'>
                 <Nav />
-                <ProgressBar striped variant='warning' now={90}></ProgressBar>
-                <p className='mt-1 mx-2' >5/6</p>
+                <ProgressBar className='progress mt-3 mx-5' striped variant='warning' now={90} />
+                <p className='mx-1 mt-2 text-white'>1 / 6</p>
             </div>
 
             {result ? (
@@ -105,16 +157,20 @@ const Exercise5 = () => {
 
                             name='input1'
                             value={inputVal.input1}
-                            onInput={(e) => {
+                            onChange={(e) => {
 
-                                setInputVal({ ...inputVal, input1: e.target.value })
-                                if (inputVal.input1 === expectedVal.expVal1) {
-                                    setWrong1(false)
-                                    setScore(score + 1)
-                                    console.log(score)
-                                }
-                                else
-                                    setWrong1(true)
+                                setInputVal({ ...inputVal, input1: e.target.value }, () => {
+                                    console.log(inputVal.input1)
+                                    if (inputVal.input1 === expectedVal.expVal1) {
+                                        setWrong1(false)
+                                        setScore(score + 1)
+                                        console.log(score)
+                                    }
+                                    else
+                                        setWrong1(true)
+
+                                })
+
                             }}
 
                         />
@@ -124,7 +180,7 @@ const Exercise5 = () => {
 
                             name='input2'
                             value={inputVal.input2}
-                            onInput={(e) => {
+                            onChange={(e) => {
                                 setInputVal({ ...inputVal, input2: e.target.value })
                                 if (inputVal.input2 === expectedVal.expVal2) {
                                     setWrong2(false)
@@ -177,18 +233,11 @@ const Exercise5 = () => {
                             value={inputVal.input5}
                             onChange={(e) => {
                                 setInputVal({ ...inputVal, input5: e.target.value })
-                                if (inputVal.input5 === expectedVal.expVal5) {
-                                    setWrong5(false)
-                                    setScore(score + 1)
-                                    console.log(score)
-
-                                }
-                                else
-                                    setWrong5(true)
 
                             }}
 
-                        />  är alltid med dig
+                        /> är alltid
+                        med dig
 
 
                     </div>
@@ -239,7 +288,11 @@ const Exercise5 = () => {
 
                     </div>
                     <div className='continue'>
-                        <button onClick={verifyResult} className='continue-button  btn-lg'>
+                        <button onClick={() => {
+
+                            verifyResult()
+                            SeeScore()
+                        }} className='continue-button  btn-lg'>
                             NEXT
                         </button>
                     </div>

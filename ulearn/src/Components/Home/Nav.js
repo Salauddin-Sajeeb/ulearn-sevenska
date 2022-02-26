@@ -19,25 +19,25 @@ const Nav = () => {
         setAnchorEl(null);
     };
     return (
-        <div className='container mt-2 bg-dark '>
-            <img className='logo' src="https://i.ibb.co/qJG3vwd/logo.png" alt="" />
-            <div>
+        <div className='d-flex home-contain  bg-dark '>
+            <img className='logo mt-2 ml-1' src="https://i.ibb.co/qJG3vwd/logo.png" alt="" />
+            <div className='home-nav'>
                 <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-                    <Button sx={{ color: 'black', minWidth: 100, fontWeight: 600 }}>Home</Button>
-                    <Button sx={{ color: 'black', minWidth: 100, fontWeight: 600 }}>Songs</Button>
-                    <Button sx={{ color: 'black', minWidth: 100, fontWeight: 600 }}>Culture</Button>
+                    <div className='home-bg mx-4 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src=' https://i.ibb.co/SQ1vmsv/home.png'></img> Home</Button></div>
+                    <div className='home-bg mx-4 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src='https://i.ibb.co/FxCnndZ/song.png'></img> Song</Button></div>
+                    <div className='home-bg mx-4 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src='https://i.ibb.co/FxCnndZ/song.png'></img> Culture</Button></div>
 
                     <Tooltip title="Account settings">
                         <IconButton
                             onClick={handleClick}
                             size="medium"
-                            sx={{ ml: 40 }}
+                            sx={{ ml: 10 }}
                             aria-controls={open ? 'account-menu' : undefined}
                             aria-haspopup="true"
                             aria-expanded={open ? 'true' : undefined}
                         >
                             <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
-                            <Typography sx={{ pl: 1, width: 42, height: 30 }}>UserName</Typography>
+                            <Typography sx={{ pl: 1, width: 42, height: 30, color: 'white', mt: 1 }}>UserName</Typography>
 
                         </IconButton>
                     </Tooltip>

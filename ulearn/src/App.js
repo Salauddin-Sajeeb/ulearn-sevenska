@@ -3,7 +3,7 @@ import './App.css';
 import Home from './Components/Home/Home';
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
-import Lession1 from './Components/Lesson1/Lession1';
+
 import Page1 from './Components/Lesson1/Page1';
 import Page2 from './Components/Lesson1/Page2';
 import Page3 from './Components/Lesson1/Exercise1/Page3';
@@ -30,7 +30,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/lesson1" element={<Lession1 />} />
+
             <Route path="/e1p1" element={<Page1 />} />
             <Route path="/e1p2" element={<Page2 />} />
             <Route path="/e1p3" element={<Page3 />} />
