@@ -4,9 +4,6 @@ import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Tooltip from '@mui/material/Tooltip';
 import './nav.css'
 import { Button } from '@mui/material';
 const Nav = () => {
@@ -23,24 +20,13 @@ const Nav = () => {
             <img className='logo mt-2 ml-1' src="https://i.ibb.co/qJG3vwd/logo.png" alt="" />
             <div className='home-nav'>
                 <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
-                    <div className='home-bg mx-4 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src=' https://i.ibb.co/SQ1vmsv/home.png'></img> Home</Button></div>
-                    <div className='home-bg mx-4 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src='https://i.ibb.co/FxCnndZ/song.png'></img> Song</Button></div>
-                    <div className='home-bg mx-4 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src='https://i.ibb.co/FxCnndZ/song.png'></img> Culture</Button></div>
+                    <div className='home-bg mx-2 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src='https://i.ibb.co/mqRdNd9/home.png'></img> Home</Button></div>
+                    <div className='culture-bg mx-2 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src=' https://i.ibb.co/9Hq27J7/song.png '></img> Songs</Button></div>
+                    <div className='culture-bg mx-2 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src=' https://i.ibb.co/RcTxFjh/culture.png'></img> Culture</Button></div>
+                    <div className='user-bg ml-5 mt-2'> <Button onClick={handleClick} sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid user-img mx-1' src='https://i.ibb.co/jJNwh6x/user.png'></img> Username</Button></div>
 
-                    <Tooltip title="Account settings">
-                        <IconButton
-                            onClick={handleClick}
-                            size="medium"
-                            sx={{ ml: 10 }}
-                            aria-controls={open ? 'account-menu' : undefined}
-                            aria-haspopup="true"
-                            aria-expanded={open ? 'true' : undefined}
-                        >
-                            <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
-                            <Typography sx={{ pl: 1, width: 42, height: 30, color: 'white', mt: 1 }}>UserName</Typography>
 
-                        </IconButton>
-                    </Tooltip>
+
                 </Box>
                 <Menu
                     anchorEl={anchorEl}

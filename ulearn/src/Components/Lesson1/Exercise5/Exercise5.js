@@ -69,6 +69,7 @@ const Exercise5 = () => {
             setScore(score + 1)
             console.log(score)
         }
+
         else
             setWrong1(true)
     }, [inputVal.input1])
@@ -154,22 +155,12 @@ const Exercise5 = () => {
 
 
                         <input className='input-6b' type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
-
+                            disabled={!wrong1 ? true : false}
                             name='input1'
                             value={inputVal.input1}
                             onChange={(e) => {
 
-                                setInputVal({ ...inputVal, input1: e.target.value }, () => {
-                                    console.log(inputVal.input1)
-                                    if (inputVal.input1 === expectedVal.expVal1) {
-                                        setWrong1(false)
-                                        setScore(score + 1)
-                                        console.log(score)
-                                    }
-                                    else
-                                        setWrong1(true)
-
-                                })
+                                setInputVal({ ...inputVal, input1: e.target.value })
 
                             }}
 
@@ -177,18 +168,11 @@ const Exercise5 = () => {
                         ska älska dig tills mitt hjärta går under
                         Uti alla stunder, blixtar och dunder
                         Lova mig att  <input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
-
+                            disabled={!wrong2 ? true : false}
                             name='input2'
                             value={inputVal.input2}
                             onChange={(e) => {
                                 setInputVal({ ...inputVal, input2: e.target.value })
-                                if (inputVal.input2 === expectedVal.expVal2) {
-                                    setWrong2(false)
-                                    setScore(score + 1)
-                                    console.log(score)
-                                }
-                                else
-                                    setWrong2(true)
                             }}
 
                         /> räknar sekunder

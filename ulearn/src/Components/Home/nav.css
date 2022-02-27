@@ -32,16 +32,37 @@
 .home
 {
     text-decoration: none;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .home-bg
 {
   width: 140px;
     background-color: #FAB424;
+    border-radius: 10px;
 }
 .home-img
 {
-    height: 25px;
+    height: 32px;
+    width: 55px;
+}
+.culture-bg
+{
+    width: 140px;
+    background-color:#FCD688;
+    border-radius: 10px;
+}
+.user-img
+{
+    height: 35px;
     width: 40px;
+}
+.user-bg
+{
+    width: 145px;
+   
+    background-color:#E5E5E5;
+    border-radius: 10px;
+    margin-left: 180px;
+    
 }
