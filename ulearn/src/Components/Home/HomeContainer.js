@@ -6,7 +6,7 @@ import './HomeContainer.css'
 const HomeContainer = () => {
     const { percent, lession1 } = Useauth()
     return (
-        <div className='home-container mt-3'>
+        <div className='home-container'>
 
             <div className="d-flex">
                 <img className='memoji mx-5 img-fluid' src="https://i.ibb.co/NKX2fMH/memoji.png" alt="" />

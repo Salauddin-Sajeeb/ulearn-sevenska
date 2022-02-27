@@ -6,6 +6,7 @@ const Quiz = () => {
     const [showResults, setShowResults] = useState(false);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
+    const [wrong, setWrong] = useState(false)
     const [currentImg, setCurrentImg] = useState(0)
     const images = [
         'https://i.ibb.co/ZHpVN5D/hej.png', 'https://i.ibb.co/8K9fwMF/hejda.png', 'https://i.ibb.co/xmkktZf/god-m.png', ' https://i.ibb.co/Jsndnjz/god-d.png',
@@ -22,9 +23,11 @@ const Quiz = () => {
         // Increment the score
         if (isCorrect) {
             setScore(score + 1);
-
+            setWrong(false)
         }
-
+        if (!isCorrect) {
+            setWrong(true)
+        }
         if (currentQuestion + 1 < Datas.length) {
             setCurrentQuestion(currentQuestion + 1);
         } else {
