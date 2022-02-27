@@ -96,7 +96,7 @@ const Exercise6 = () => {
 
             ) :
 
-                (<div className='page-6'>
+                (<div className='page-6 pt-5'>
                     <h1 className='pt-2'>Basic Conversation-hej!</h1>
                     <h6>Fill in the gaps for the following conversation!</h6>
                     <div className='audio-sec d-flex'>
