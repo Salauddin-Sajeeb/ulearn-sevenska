@@ -3,14 +3,14 @@
     background-image: url("https://i.ibb.co/FBT6f2B/background.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    height: 83vh;
+    height: 80vh;
 }
 .page-6b
 {
     background-image: url("https://i.ibb.co/FBT6f2B/background.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    height: 83vh;
+    height: 80vh;
 }
 .audio-sec
 {
@@ -101,4 +101,17 @@ input
     align-items: center;
     justify-content: center;
     padding: 10px;
+}
+.solution
+{
+    width: 200px;
+}
+.ex6-next
+{
+    margin-left: 100px;
+
+}
+.hint-area
+{
+    height:50px;
 }

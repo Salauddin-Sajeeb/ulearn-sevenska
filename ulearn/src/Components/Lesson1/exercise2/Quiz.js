@@ -96,7 +96,7 @@ const Quiz = () => {
             )}
             {
                 showResults ?
-                    <div className='continue mt-3'>
+                    <div className='next '>
                         <button className='continue-button btn-lg '
 
                         ><Link className='continue-btn-style' to='/e3'>CONTINUE</Link></button>

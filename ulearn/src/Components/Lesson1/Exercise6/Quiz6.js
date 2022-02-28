@@ -179,7 +179,7 @@ const Quiz6 = () => {
 
                         </div>
 
-                        <div className='continue'>
+                        <div className='ex6-next'>
                             <button onClick={() => {
                                 verifyResult()
                                 SeeScore()
@@ -194,7 +194,7 @@ const Quiz6 = () => {
                 </div>)}
             {
                 result ?
-                    <div className='continue mt-3 ex5-result next ml-5'>
+                    <div className='next'>
                         <button className='continue-button btn-lg bg-warning '
 
                         ><Link className='continue-btn-style' to='/e6b'>CONTINUE</Link></button>
