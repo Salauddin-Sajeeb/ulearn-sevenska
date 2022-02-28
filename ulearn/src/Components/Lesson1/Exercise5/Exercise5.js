@@ -139,10 +139,10 @@ const Exercise5 = () => {
 
             ) : (<div className='exercise-5'>
                 <h1 className='pt-4 '>Myra Granberg</h1>
-                <div className='video'>
+                <div className='video '>
                     <ReactPlayer
                         url='https://www.youtube.com/watch?v=aVNuoeh0Ovw'
-                        height='200px'
+                        height='210px'
                         width='550px'
                         controls
                     />

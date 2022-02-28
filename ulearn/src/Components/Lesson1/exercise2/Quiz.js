@@ -38,9 +38,6 @@ const Quiz = () => {
     return (
         <div>
 
-            {/* 2. Current Score  */}
-
-
             {/* 3. Show results or show the question game  */}
             {showResults ? (
                 /* 4. Final Results */
@@ -56,7 +53,6 @@ const Quiz = () => {
                             <img className='img-result img-fluid' src="https://i.ibb.co/gm1wrmM/well-done.png" alt="" srcset="" />
 
                     }
-
 
                 </div>
             ) : (

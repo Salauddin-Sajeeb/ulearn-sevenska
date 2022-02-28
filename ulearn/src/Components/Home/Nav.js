@@ -23,7 +23,7 @@ const Nav = () => {
                     <div className='home-bg mx-2 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src='https://i.ibb.co/mqRdNd9/home.png'></img> Home</Button></div>
                     <div className='culture-bg mx-2 mt-2'> <Button sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid home-img mx-1' src=' https://i.ibb.co/9Hq27J7/song.png '></img> Song</Button></div>
                     <div className='culture-bg mx-2 mt-2'> <Button sx={{ color: 'black', fontWeight: 600, cursor: 'pointer' }}><img className='img-fluid home-img mx-1' src=' https://i.ibb.co/RcTxFjh/culture.png'></img> Culture</Button></div>
-                    <div className='user-bg ml-5 mt-2'> <Button onClick={handleClick} sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid user-img mx-1' src='https://i.ibb.co/jJNwh6x/user.png'></img> Username</Button></div>
+                    <div className='user-bg ml-5 mt-1'> <Button onClick={handleClick} sx={{ color: 'black', fontWeight: 600 }}><img className='img-fluid user-img mx-1' src='https://i.ibb.co/jJNwh6x/user.png'></img> Username</Button></div>
 
 
 
