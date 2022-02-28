@@ -13,7 +13,7 @@ const Exercise2 = () => {
                 <ProgressBar className='progress mt-3 mx-5' striped variant='warning' now={35} />
                 <p className='mx-1 mt-2 text-white'>2 / 6</p>
             </div>
-            <div className='exercise-2 pt-2'>
+            <div className='exercise-5 pt-2'>
                 <Quiz />
 
             </div>
