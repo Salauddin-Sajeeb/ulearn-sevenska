@@ -294,7 +294,7 @@ const Quiz5 = () => {
             </div>)}
             {
                 result ?
-                    <div className='next'>
+                    <div className='next mt-3'>
                         <button className='continue-button btn-lg bg-warning  '
 
                         ><Link className='continue-btn-style' to='/e6'>CONTINUE</Link></button>

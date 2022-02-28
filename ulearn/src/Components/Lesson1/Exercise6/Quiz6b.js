@@ -179,7 +179,7 @@ const Quiz6b = () => {
 
 
                         </div>
-                        <div className='continue'>
+                        <div className='ex6-next'>
                             <button onClick={() => {
                                 verifyResult()
                                 SeeScore()
@@ -197,7 +197,7 @@ const Quiz6b = () => {
                 )}
             {
                 result ?
-                    <div className='continue mt-3 ex5-result next'>
+                    <div className='next mt-3'>
                         <button
                             onClick={() => {
                                 handlePercent()
