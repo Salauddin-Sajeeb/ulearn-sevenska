@@ -48,11 +48,7 @@ const Quiz5 = () => {
         expVal4: "vi",
         expVal5: "jag",
     }
-    const SeeScore = () => {
-        if (score > 5) {
-            setScore(5)
-        }
-    }
+
     const verifyResult = () => {
         if (inputVal.input1 === "" || inputVal.input2 === "" || inputVal.input3 === "" || inputVal.input4 === "" || inputVal.input5 === "")
 
@@ -138,7 +134,7 @@ const Quiz5 = () => {
                         You Scored {score}/5
                     </h2>
                     {
-                        score < 4 ?
+                        score < 6 ?
                             <img className='img-result img-fluid' src='https://i.ibb.co/R4vsyJp/retry.png'></img>
                             :
                             <img className='img-result img-fluid' src="https://i.ibb.co/gm1wrmM/well-done.png" alt="" />

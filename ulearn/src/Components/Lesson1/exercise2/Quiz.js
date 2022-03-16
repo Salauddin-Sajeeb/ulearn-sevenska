@@ -25,6 +25,7 @@ const Quiz = () => {
             setScore(score + 1);
             setWrong(false)
         }
+
         if (!isCorrect) {
             setWrong(true)
         }

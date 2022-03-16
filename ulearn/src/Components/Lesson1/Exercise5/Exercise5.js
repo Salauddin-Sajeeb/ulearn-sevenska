@@ -1,13 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
+import React from 'react';
 import './exercise5.css'
 import Nav from '../Lesson1-nav/Nav';
-import { Link } from 'react-router-dom';
 import { ProgressBar } from 'react-bootstrap';
-import ReactPlayer from 'react-player';
 import './exercise5.css'
 import Quiz5 from './Quiz5';
 
