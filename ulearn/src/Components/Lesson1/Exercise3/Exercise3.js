@@ -19,8 +19,8 @@ const rows = [
     createData('second singular', 'you', 'du'),
     createData('third singular', 'he', 'han'),
     createData('', 'she', 'hon'),
-    createData('', 'it', 'den (en-form)'),
-    createData('', '', 'ett (ett-form)'),
+    createData('', 'it', '  den (en-form) / ett (ett-form)'),
+    // createData('', '', 'ett (ett-form)'),
     createData('first plural', 'we', 'vi'),
     createData('second plural', 'You', 'ni'),
     createData('third plural', 'they', 'de')
@@ -37,8 +37,8 @@ const Exercise3 = () => {
             </div>
 
             <div className='exercise-3 pt-3'>
-                <h2>Subject pronouns</h2>
-                <h4 className='my-3'>Learning Swedish subject pronouns displayed in the table below is vital to the language</h4>
+                <h1 className='py-4'>Subject pronouns</h1>
+                <p className='my-3'> The subject pronouns displayed in the table below are extremely important to know in order to learn Swedish</p>
                 <div className="table-container">
                     <div className='table-section'>
                         <TableContainer component={Paper}>

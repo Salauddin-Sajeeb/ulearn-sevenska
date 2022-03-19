@@ -46,7 +46,7 @@ const HomeContainer = () => {
                         whileHover={{ scale: 1.1 }}
                     >
                         <Link className='button-details' to='/e1p1'>
-                            <h4><b>Lesson 1 : greetings & subject pronouns</b></h4>
+                            <h3>Lesson 1 : greetings & subject pronouns </h3>
                             <h5 className='ml-2'>Here you will learn : </h5>
                             <ul>
                                 <li>how to greet people</li>
@@ -57,13 +57,13 @@ const HomeContainer = () => {
                     </motion.button>
 
                     <motion.button
-                        className='button-2'
+                        className='button-2' 
                         whileHover={{ scale: 1.1 }}
                         disabled={!lession1 ? true : false}
                     >
 
-                        <h4>Lesson 2 : greetings & subject pronouns</h4>
-                        <h6 className='ml-2'>Here you will learn : </h6>
+                        <h3>Lesson 2 : greetings & subject pronouns</h3>
+                        <h5 className='ml-2'>Here you will learn : </h5>
                         <ul>
                             <li>how to greet people</li>
                             <li>subject pronouns</li>

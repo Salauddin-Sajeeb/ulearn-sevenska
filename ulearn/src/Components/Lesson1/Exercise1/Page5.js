@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './page3.css'
+import './page5.css'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -21,29 +21,29 @@ const Page5 = () => {
 
             <div className='page-1'>
                 <h1 className='py-4'>Your first Swedish words! Click to listen</h1>
-                <div className='hej-audio'>
+                <div className='hej-audio d-flex align-items-center'>
                     <ReactPlayer
                         url="https://www.youtube.com/watch?v=3cBB-E2EtCw"
-                        height='250px'
+                        height='300px'
                         controls
                         autoplay
                     />
                 </div>
-                <div className='god-morgon'>
+                <div className='god-k d-flex align-items-center'>
                     {
-                        show ? <h4 className=''>God kväll</h4> : null
+                        show ? <h4><b>God kväll</b></h4> : null
                     }
                 </div>
-                <div className='divider'>
+                <div className='divider d-flex align-items-center'>
 
                 </div>
-                <div className='mt-1'>
+                <div className='good-e d-flex align-items-center'>
                     <h4>Good evening </h4>
                 </div>
 
             </div>
             <div className='continue'>
-                <div className='pt-3'>
+                <div className='pt-3 d-flex align-items-center'>
                     {
                         !button ? <motion.button
 
@@ -59,7 +59,7 @@ const Page5 = () => {
                 </div>
                 <div className="next">
                     {
-                        button ? <button className='continue-button btn-lg '
+                        button ? <button className='continue-button btn-lg d-flex align-items-center'
 
                         ><Link className='continue-btn-style' to='/e1p6'>CONTINUE</Link></button> : null
                     }

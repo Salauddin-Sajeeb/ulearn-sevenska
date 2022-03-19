@@ -12,20 +12,20 @@ const data = [
     {
         "id": 1,
         "audio": audio1,
-        "text1": 'jag pratar inte sevenska',
+        "text1": 'Jag pratar inte Svenska',
         "text2": 'I do not speak Swedish'
     },
     {
         "id": 2,
         "audio": audio2,
-        "text1": 'Kan du hjälpa mig?  ',
-        "text2": 'Can you help me?)'
+        "text1": 'Kan du hjälpa mig?',
+        "text2": 'Can you help me?'
     },
     {
         "id": 3,
         "audio": audio3,
-        "text1": 'CHan älskar Afrobeat musik  ',
-        "text2": 'He loves Afrobeat music '
+        "text1": 'Han älskar Afrobeat musik!',
+        "text2": 'He loves Afrobeat music!'
     },
     {
         "id": 4,
@@ -33,9 +33,6 @@ const data = [
         "text1": 'Hon bor i Sverige',
         "text2": 'She lives in Sweden'
     },
-
-
-
 ]
 const Exercise3a = () => {
     return (
@@ -47,7 +44,7 @@ const Exercise3a = () => {
             </div>
 
             <div className='exercise-3 pt-3 '>
-                <h1>Listen the subjects pronouns</h1>
+                <h1>Listen to the subjects pronouns</h1>
                 <div className='list-container'>
                     {
                         data.map(items => <li className='list' key={items.id}>
@@ -58,7 +55,7 @@ const Exercise3a = () => {
                                     controls
                                 />
                                 <div className='mt-3 mx-5 background pt-2 '>
-                                    <p>{items.text1}</p>
+                                    <p><b>{items.text1}</b></p>
                                     <p>{items.text2}</p>
                                 </div>
                             </div>
@@ -69,7 +66,7 @@ const Exercise3a = () => {
 
             <div className='continue-section ex-3 next pt-2'>
                 <button className='continue-btn  btn-lg'>
-                    <Link className='btn-style' to='/e3p2'>Continue</Link>
+                    <Link className='btn-style' to='/e3p2'>CONTINUE</Link>
                 </button>
             </div>
 

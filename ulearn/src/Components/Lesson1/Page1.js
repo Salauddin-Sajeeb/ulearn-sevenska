@@ -21,29 +21,29 @@ const Page1 = () => {
 
             <div className='page-1'>
                 <h1 className='py-4'>Your first Swedish words! Click to listen</h1>
-                <div className='hej-audio'>
+                <div className='hej-audio d-flex align-items-center'>
                     <ReactPlayer
                         url="https://www.youtube.com/watch?v=6F-QkE2IDIA"
-                        height='250px'
+                        height='300px'
                         controls
                         autoplay
                     />
                 </div>
-                <div className='hej'>
+                <div className='hej d-flex align-items-center'>
                     {
-                        show ? <h4>Hej</h4> : null
+                        show ? <h4><b>Hej</b></h4> : null
                     }
                 </div>
-                <div className='divider'>
+                <div className='divider d-flex align-items-center'>
 
                 </div>
-                <div className='mt-1'>
+                <div className='mt-1 d-flex align-items-center'>
                     <h4>Hello</h4>
                 </div>
 
             </div>
             <div className='continue'>
-                <div className='pt-3'>
+                <div className='pt-3 d-flex align-items-center'>
                     {
                         !button ? <motion.button
 
@@ -59,7 +59,7 @@ const Page1 = () => {
                 </div>
 
                 <div className='next'>
-                    {button ? <button className='continue-button btn-lg '
+                    {button ? <button className='continue-button btn-lg d-flex align-items-center'
 
                     ><Link className='continue-btn-style' to='/e1p2'>CONTINUE</Link></button> : null
                     } </div>

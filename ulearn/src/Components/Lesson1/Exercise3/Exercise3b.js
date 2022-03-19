@@ -2,40 +2,37 @@ import React from 'react';
 import { ProgressBar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Nav from '../Lesson1-nav/Nav';
-import audio5 from '../../../audios/audios-exercise3/audio_5.m4a'
-import audio6 from '../../../audios/audios-exercise3/audio_6.m4a'
-import audio7 from '../../../audios/audios-exercise3/audio_7.m4a'
-import audio8 from '../../../audios/audios-exercise3/audio_8.m4a'
+import audio5 from '../../../audios/audios-exercise3/audio_6.m4a'
+import audio6 from '../../../audios/audios-exercise3/audio_7.m4a'
+import audio7 from '../../../audios/audios-exercise3/audio_8.m4a'
+import audio8 from '../../../audios/audios-exercise3/audio_9.m4a'
 import './Exercise3.css'
 import ReactAudioPlayer from 'react-audio-player';
 const data = [
     {
-        "id": 5,
-        "audio": audio5,
-        "text1": 'jag pratar inte sevenska',
-        "text2": 'I do not speak Swedish'
+        "id": 6,
+        "audio": audio6,
+        "text1": 'MISSING AUDIO 6, PLEASE REPLACE WITH CORRECT AUDIO',
+        "text2": 'MISSING AUDIO 6, PLEASE REPLACE WITH CORRECT AUDIO'
     },
     {
         "id": 6,
         "audio": audio6,
-        "text1": 'Kan du hjälpa mig?  ',
-        "text2": 'Can you help me?)'
+        "text1": 'Vi ska mötas vid sju!',
+        "text2": 'We will meet at seven!'
     },
     {
         "id": 7,
         "audio": audio7,
-        "text1": 'CHan älskar Afrobeat musik  ',
-        "text2": 'He loves Afrobeat music '
+        "text1": 'Varför studerar ni franska?',
+        "text2": 'Why are you studying French?'
     },
     {
         "id": 8,
         "audio": audio8,
-        "text1": 'Hon bor i Sverige',
-        "text2": 'She lives in Sweden'
+        "text1": 'De dansar bra',
+        "text2": 'They dance well'
     },
-
-
-
 ]
 const Exercise3b = () => {
     return (
@@ -46,7 +43,7 @@ const Exercise3b = () => {
                 <p className='mx-1 mt-2 text-white'>3 / 6</p>
             </div>
             <div className='exercise-3 pt-3'>
-                <h1>Listen the subjects pronouns</h1>
+                <h1>Listen to the subjects pronouns</h1>
                 <div className='list-container'>
                     {
                         data.map(items => <li className='list' key={items.id}>
@@ -57,7 +54,7 @@ const Exercise3b = () => {
                                     controls
                                 />
                                 <div className='mt-3 mx-5 background pt-2 '>
-                                    <p>{items.text1}</p>
+                                    <p><b>{items.text1}</b></p>
                                     <p>{items.text2}</p>
                                 </div>
                             </div>
@@ -68,7 +65,7 @@ const Exercise3b = () => {
 
             <div className='continue-section ex-3 next pt-2'>
                 <button className='continue-btn  btn-lg'>
-                    <Link className='btn-style' to='/e4'>Continue</Link>
+                    <Link className='btn-style' to='/e4'>CONTINUE</Link>
                 </button>
             </div>
         </div>

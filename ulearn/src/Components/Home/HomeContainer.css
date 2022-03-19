@@ -71,10 +71,10 @@
 {
     padding: 20px;
     background-color: white;
-    width: 800px;
-    border-radius: 5px;
+    width: 850px;
+    border-radius: 40px;
     text-align: start;
-    height: 160px ;
+    height: 190px ;
 }
 .button-details
 {
@@ -84,11 +84,11 @@
 .button-2
 {
     padding: 20px;
-    background-color: white;
-    width: 800px;
-    border-radius: 5px;
+    background-color: lightgray;
+    width: 850px;
+    border-radius: 40px;
     margin-top: 20px;
-    height: 160px;
+    height: 190px ;
     text-align: start;
 }
 .lessons-input
@@ -105,7 +105,8 @@ ul
 {
     text-align: start;
 }
-h4
+h3
 {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
+

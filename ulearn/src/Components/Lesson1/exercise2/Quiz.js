@@ -42,7 +42,7 @@ const Quiz = () => {
             {/* 3. Show results or show the question game  */}
             {showResults ? (
                 /* 4. Final Results */
-                <div className="final-results pt-5">
+                <div className="final-results pt-5 d-flex align-items-center">
 
                     <h2>
                         You scored {score}/{Datas.length}
@@ -61,7 +61,7 @@ const Quiz = () => {
                 /* 5. Question Card  */
                 <div>
                     <h1 className='py-1'>Match the correct translations for the images</h1>
-                    <img className='img-quiz' src={images[currentImg]} alt="" />
+                    <img className='img-quiz d-flex align-items-center' src={images[currentImg]} alt="" />
                     <div className="question-card">
                         {/* Current Question  */}
                         {/* <h2>
@@ -85,7 +85,7 @@ const Quiz = () => {
                                                 setTimeout(function () {
                                                     switchImg()
                                                 }, 1000);
-                                            }} className='btn btn-warning text-dark button-option mx-5 px-5'> {option.text}</button>
+                                            }} className='btn btn-warning text-dark button-option mx-5 px-5 align-items-center'> {option.text}</button>
                                     )
                                 }
                                 )
@@ -98,7 +98,7 @@ const Quiz = () => {
             {
                 showResults ?
                     <div className='next mt-3'>
-                        <button className='continue-button btn-lg '
+                        <button className='continue-button btn-lg d-flex align-items-center'
 
                         ><Link className='continue-btn-style' to='/e3'>CONTINUE</Link></button>
                     </div> : null

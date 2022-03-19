@@ -12,20 +12,19 @@
     width: 500px;
     height: 100px;
     margin-left: 350px;
+    padding-top: 10px;
 }
 .hej
 {
     width: 50px;
    
 }
-
 .text-area
 {
-margin-top: 20px;
-padding-bottom: 15px;
-
+    margin-top: 25px;
+    padding-bottom: 15px;
+    padding-right: 40px;
 }
-
 .blank-area
 {
 flex: 1;
@@ -34,18 +33,16 @@ flex: 1;
 }
 .horizontal-divider
 {
+    margin-top: 5px;
     width: 5px;
-    height: 150px;
-    background-color:darkgray;
-    
+    height: 200px;
+    background-color: #FCD688;  
 }
 .english-area
 {
     justify-content: center;
     align-items: center;
-  flex: 1;
-
-
+    flex: 1;
 }
 input{
     border:none;
@@ -65,22 +62,23 @@ input :focus
 {
     transform: translateY(-20px);
 }
-
 .hint-area
 {
  height: 70px;
     background-color: white;
     margin-top: 40px;
 }
-
 .solution
 {
     flex: 2;
 }
-
-
 .continue
 {
     flex: 1;
-  
+}
+.next
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Be Vietnam Pro', sans-serif; 
 }

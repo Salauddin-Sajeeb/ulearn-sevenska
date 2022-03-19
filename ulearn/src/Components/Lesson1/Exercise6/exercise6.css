@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&family=Poppins:wght@500&family=Raleway&display=swap');
 .page-6
 {
     background-image: url("https://i.ibb.co/FBT6f2B/background.jpg");
@@ -29,8 +30,9 @@
 }
 .audio-button
 {
-
   height: 70px;
+  margin-left: 130px;
+  margin-top: 10px;
 }
 .image
 {
@@ -43,8 +45,8 @@
 }
 .guy-img
 {
-    height: 80px;
-    width: 70px;
+    height: 90px;
+    width: 80px;
 }
 .guy
 {
@@ -54,15 +56,16 @@
 }
 .conversation
 {
-   margin-left: 100px;
+   margin-left: 400px;
    margin-top: 40px;
+
    
 }
 .conversation-2
 {
-    margin-left: 100px;
-   margin-top: 40px;
-   height: 230px;
+    margin-left: 380px;
+    margin-top: 40px;
+    height: 230px;
    
 }
 .girl
@@ -73,9 +76,11 @@
 .paragraph
 {
     width: 250px;
-    height: 50px;
-    background-color: darkgray;
-    
+    height: 60px;
+    background-color: #E6E6E6;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    color: black;
 }
 
 input

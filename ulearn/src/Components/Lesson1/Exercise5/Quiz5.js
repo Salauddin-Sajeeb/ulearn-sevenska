@@ -128,10 +128,10 @@ const Quiz5 = () => {
         <div>
             {result ? (
                 /* 4. Final Results */
-                <div className="final-results pt-5 ">
+                <div className="final-results pt-5 d-flex align-items-center">
 
                     <h2>
-                        You Scored {score}/5
+                        You scored {score}/5
                     </h2>
                     {
                         score < 6 ?
@@ -143,17 +143,17 @@ const Quiz5 = () => {
                 </div>
 
             ) : (<div className='exercise-5'>
-                <h1 className='pt-2 '>Myra Granberg</h1>
+                <h1 className='pt-2 '>Fill in the gaps by typing the correct subject pronouns </h1>
                 <div className='video '>
                     <ReactPlayer
                         url='https://www.youtube.com/watch?v=aVNuoeh0Ovw'
-                        height='205px'
-                        width='550px'
+                        height='180px'
+                        width='300px'
                         controls
                     />
                 </div>
 
-                <h4 className='mt-5 pt-5'>Fill in the gaps with the correct subject pronouns</h4>
+                {/* <h4 className='mt-5 pt-5'>Fill in the gaps with the correct subject pronouns</h4> */}
 
                 <div className='text-area d-flex  '>
                     <div className='blank-area px-3'>
@@ -170,9 +170,9 @@ const Quiz5 = () => {
                             }}
 
                         />
-                        ska älska dig tills mitt hjärta går under
-                        Uti alla stunder, blixtar och dunder
-                        Lova mig att  <input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
+                         ska älska dig tills mitt hjärta går under
+                        <br />Uti alla stunder, med blixtar och dunder
+                        <br />Lova mig att <input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
 
                             name='input2'
                             value={inputVal.input2}
@@ -181,7 +181,7 @@ const Quiz5 = () => {
                             }}
 
                         /> räknar sekunder
-                        Åh, baby, <input className='input-6b' type='text' style={{ color: wrong3 ? "red" : "green", fontWeight: "bold" }}
+                        <br />Åh, baby, <input className='input-6b' type='text' style={{ color: wrong3 ? "red" : "green", fontWeight: "bold" }}
 
                             name='input3'
                             value={inputVal.input3}
@@ -197,10 +197,10 @@ const Quiz5 = () => {
                                     setWrong3(true)
                             }}
 
-                        />  är alltid med dig
-                        Älska dig tills mitt hjärta går under
-                        Uti alla stunder, med blixtar och dunder
-                        Lova mig att <input className='input-6b' type='text' style={{ color: wrong4 ? "red" : "green", fontWeight: "bold" }}
+                        /> är alltid med dig
+                        <br />Älska dig tills mitt hjärta går under
+                        <br />Uti alla stunder, med blixtar och dunder
+                        <br />Lova mig att <input className='input-6b' type='text' style={{ color: wrong4 ? "red" : "green", fontWeight: "bold" }}
 
                             name='input4'
                             value={inputVal.input4}
@@ -215,8 +215,8 @@ const Quiz5 = () => {
                                     setWrong4(true)
                             }}
 
-                        />  räknar sekunder
-                        För, baby, <input className='input-6b' type='text' style={{ color: wrong5 ? "red" : "green", fontWeight: "bold" }}
+                        /> räknar sekunder
+                        <br />För, baby, <input className='input-6b' type='text' style={{ color: wrong5 ? "red" : "green", fontWeight: "bold" }}
 
                             name='input5'
                             value={inputVal.input5}
@@ -225,8 +225,7 @@ const Quiz5 = () => {
 
                             }}
 
-                        /> är alltid
-                        med dig
+                        /> är alltid med dig
 
 
                     </div>
@@ -235,13 +234,13 @@ const Quiz5 = () => {
                     </div>
                     <div className='english-area px-3'>
                         I will love you until my heart gives in,
-                        Throughout every moment, with lightning and thunder
-                        Promise me we'll count the seconds
-                        Ah, baby, I am always with you
-                        Love you until my heart gives in,
-                        Throughout every moment, with lightning and thunder
-                        Promise me we'll count the seconds
-                        Because, baby, I am always with you
+                        <br />Throughout every moment, with lightning and thunder
+                        <br />Promise me we'll count the seconds
+                        <br />Ah, baby, I am always with you
+                        <br />Love you until my heart gives in,
+                        <br />Throughout every moment, with lightning and thunder
+                        <br />Promise me we'll count the seconds
+                        <br />Because, baby, I am always with you
                     </div>
                 </div>
                 <div className='hint-area d-flex '>
