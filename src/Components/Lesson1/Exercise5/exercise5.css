@@ -1,0 +1,91 @@
+.exercise-5
+{
+    background-image: url("https://i.ibb.co/FBT6f2B/background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.myra-video
+{
+    background-color: blanchedalmond;
+    width: 500px;
+    height: 100px;
+    margin-left: 350px;
+    padding-top: 10px;
+}
+.hej
+{
+    width: 50px;
+   
+}
+.text-area
+{
+    margin-top: 25px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+}
+.blank-area
+{
+flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal-divider
+{
+    margin-top: 5px;
+    width: 5px;
+    height: 200px;
+    background-color: #FCD688;  
+}
+.english-area
+{
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+input{
+    border:none;
+    outline: 0;
+    background: transparent;
+    width: 60px;
+    height: 12px;
+    border-bottom: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: .5 ease;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+input :focus
+{
+    transform: translateY(-20px);
+}
+.hint-area
+{
+ height: 70px;
+    background-color: white;
+    margin-top: 30px;
+}
+.solution
+{
+    flex: 1;
+}
+.continue
+{
+    flex: 1;
+}
+.next
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Be Vietnam Pro', sans-serif; 
+}
+.ex5-next
+{
+    flex: 1;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}

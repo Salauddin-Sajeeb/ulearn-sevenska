@@ -1,0 +1,113 @@
+import React, { useState } from 'react';
+import './quiz.css';
+import Datas from './Data';
+import { Link } from 'react-router-dom';
+const Quiz = () => {
+    const [showResults, setShowResults] = useState(false);
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [score, setScore] = useState(0);
+    const [wrong, setWrong] = useState(false)
+    const [currentImg, setCurrentImg] = useState(0)
+    const images = [
+        'https://i.ibb.co/ZHpVN5D/hej.png', 'https://i.ibb.co/8K9fwMF/hejda.png', 'https://i.ibb.co/xmkktZf/god-m.png', ' https://i.ibb.co/Jsndnjz/god-d.png',
+        'https://i.ibb.co/StFg776/god-k.png', 'https://i.ibb.co/8jqs5yd/tack.png'
+    ]
+
+    const switchImg = () => {
+        if (currentImg < images.length - 1) { setCurrentImg(currentImg + 1) }
+        else {
+            setCurrentImg(false)
+        }
+    }
+    const optionClicked = (isCorrect) => {
+        // Increment the score
+        if (isCorrect) {
+            setScore(score + 1);
+            setWrong(false)
+        }
+
+        if (!isCorrect) {
+            setWrong(true)
+        }
+        if (currentQuestion + 1 < Datas.length) {
+            setCurrentQuestion(currentQuestion + 1);
+
+        } else {
+            setShowResults(true);
+        }
+
+    };
+
+    return (
+        <div>
+
+            {/* 3. Show results or show the question game  */}
+            {showResults ? (
+                /* 4. Final Results */
+                <div className="final-results pt-5 d-flex align-items-center">
+
+                    <h2>
+                        You scored {score}/{Datas.length}
+                    </h2>
+                    {
+                        score < 4 ?
+                            <img className='img-result img-fluid' src='https://i.ibb.co/R4vsyJp/retry.png'></img>
+                            :
+                            <img className='img-result img-fluid' src="https://i.ibb.co/gm1wrmM/well-done.png" alt="" srcset="" />
+
+                    }
+
+                </div>
+            ) : (
+
+                /* 5. Question Card  */
+                <div>
+                    <h1 className='py-1'>Match the correct translations for the images</h1>
+                    <img className='img-quiz d-flex align-items-center' src={images[currentImg]} alt="" />
+                    <div className="question-card">
+                        {/* Current Question  */}
+                        {/* <h2>
+                            Question: {currentQuestion + 1} out of {Datas.length}
+                        </h2> */}
+
+
+                        {/* List of possible answers  */}
+                        <div className='option-quiz'>
+                            {
+                                Datas[currentQuestion].options.map((option) => {
+                                    return (
+                                        <button
+                                            type='button'
+
+                                            key={option.id}
+                                            onClick={() => {
+
+                                                setTimeout(function () {
+                                                    optionClicked(option.isCorrect)
+                                                }, 100);
+                                                setTimeout(function () {
+                                                    switchImg()
+                                                }, 500);
+                                            }} className={wrong ? 'btn btn-danger text-dark button-option mx-5 px-5 ' : 'btn  btn-success text-dark button-option mx-5 px-5'}> {option.text}</button>
+                                    )
+                                }
+                                )
+                            }
+                        </div>
+
+                    </div>
+                </div>
+            )}
+            {
+                showResults ?
+                    <div className=' mt-4'>
+                        <button className='continue-btn btn-lg d-flex align-items-center'
+
+                        ><Link className='continue-btn-style' to='/e3'>CONTINUE</Link></button>
+                    </div> : null
+            }
+        </div>
+    );
+};
+
+export default Quiz;

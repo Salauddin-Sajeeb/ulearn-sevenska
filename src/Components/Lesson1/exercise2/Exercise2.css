@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&family=Montserrat:wght@500&family=Raleway&display=swap');
+.exercise-2
+{
+    background-image: url("https://i.ibb.co/FBT6f2B/background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.video-section
+{
+    background-color: blanchedalmond;
+    width: 500px;
+    height: 150px;
+    margin-left: 350px;
+    margin-top: 15px;
+}
+.button-section
+{
+    margin-top: 100px;
+    height: 250px;
+}
+.continue-section
+{
+    height: 40px;
+    background-color: white;
+}
+.btn-style
+{
+    text-decoration: none;
+    color: black;
+}
+.continue-btn
+{
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: #FAB424;
+    margin-left: 900px;
+    width: 145px;
+    border-style: none;
+}
+

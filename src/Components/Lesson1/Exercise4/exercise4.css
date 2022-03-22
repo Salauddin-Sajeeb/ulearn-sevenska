@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&family=Poppins:wght@500&family=Raleway&display=swap');
+.exercise-4
+{
+    background-image: url("https://i.ibb.co/FBT6f2B/background.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.video
+{
+height: 120px;
+margin-left: 550px;
+width: 200px;
+padding-top: 10px;
+}
+
+.continue-section
+{
+    display: flex;
+   
+}
+.continue-button
+{
+    background-color: darkorange;
+    margin-left: 650px;
+    width: 145px;
+    border-style: none;
+    margin-top: 10px;
+}
+.button-sec
+{
+   height: 15px;
+}
+.text-area
+{
+    padding-top: 80px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+/* .btn
+{
+    color: black;
+}
+
+.bg-warning
+{
+    width: 160;
+    color: black;
+    font-family: 'Be Vietnam Pro', sans-serif; 
+    font-size: 17px;
+    margin-right: 1150px;
+}  */
+.img-result
+{
+  height: 300px;
+  width: 400px;
+  margin-left: -330px;
+}
+
+input{
+    border:none;
+    outline: 0;
+    background: transparent;
+    width: 60px;
+    height: 10px;
+    border-bottom: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.vtn-primary
+{
+    background-color: #FCD688;
+}
+

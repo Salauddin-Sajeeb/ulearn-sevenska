@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&family=Montserrat:wght@500&family=Raleway&display=swap');
+.page-1
+{
+   background-image: url("https://i.ibb.co/FBT6f2B/background.jpg");
+   background-size:cover;
+   background-repeat: no-repeat;
+   height: 80vh;
+}
+.progress
+{
+   width: 700px;
+   margin-left: 15px;
+   margin-top: 10px;
+}
+.hej-audio
+{
+   display: block;
+   margin-left: 402px;
+   margin-right: auto;
+   border-radius: 10px;
+   height: 300px;
+}
+.hello
+{
+   margin-left:800px ;
+   height: 50px;
+   /* width: fit-content; */
+}
+.divider
+{
+   width: 300px;
+   background-color:gray;
+   margin-left: 556px;
+   margin-top: 36px;
+   height: 3px;
+   align-items: center;  
+   justify-content: center;
+}
+.hej
+{
+   margin-left: 330px;
+   /* padding-bottom: 10px; */
+   width: fit-content;
+   align-items: center;
+   justify-content: center;
+   transition: 0.5s ease-in-out;
+   margin-bottom: 5px;
+}
+.hej :hover
+{
+   background-color: #51E179;
+}
+.continue
+{
+   height: 60px;
+   background-color: white;
+}
+.hej-button
+{
+   margin-top: 10px;
+   width: 500px;
+   border-style: none;
+   height: 50px;
+   background-color: #E6E6E6;
+   border-radius: 10px;
+   margin-left: 470px;
+}
+.continue-button
+{
+   color:black;
+   /* font-family: 'Montserrat', sans-serif; */
+   text-decoration: none;
+   background-color: #FAB424;
+   margin-left: 900px;
+   width: 145px;
+   border-style: none;
+}
+.continue-btn-style
+{
+   text-decoration: none;
+   color: black;
+   font-family: 'Be Vietnam Pro', sans-serif; 
+}
+.py-4
+{
+   font-family: 'Be Vietnam Pro', sans-serif;
+   color: #24344F;
+}
+h4
+{
+   font-family: 'Raleway', sans-serif;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   margin-left: 668px;
+}
+.pt-3 :hover
+{
+   background-color: #FBC556;
+}
+
+.next
+{
+   margin-left: 340px;
+   height: 60px;
+}
