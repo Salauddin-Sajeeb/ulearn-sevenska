@@ -15,36 +15,36 @@
 .hej-audio
 {
    display: block;
-   margin-left: 300px;
+   margin-left: 402px;
    margin-right: auto;
    border-radius: 10px;
    height: 300px;
 }
 .hello
 {
-   margin-left:595px ;
+   margin-left:800px ;
    height: 50px;
-   align-items: center;  
-   justify-content: center;
+   /* width: fit-content; */
 }
 .divider
 {
    width: 300px;
    background-color:gray;
-   margin-left: 470px;
+   margin-left: 556px;
+   margin-top: 36px;
    height: 3px;
    align-items: center;  
    justify-content: center;
 }
 .hej
 {
-   margin-left:595px ;
-   padding-top: 20px;
-   padding-bottom: 10px;
+   margin-left: 330px;
+   /* padding-bottom: 10px; */
    width: fit-content;
    align-items: center;
    justify-content: center;
    transition: 0.5s ease-in-out;
+   margin-bottom: 5px;
 }
 .hej :hover
 {
@@ -60,14 +60,15 @@
    margin-top: 10px;
    width: 500px;
    border-style: none;
-   height: 40px;
+   height: 50px;
    background-color: #E6E6E6;
-   border-radius: 5px;
+   border-radius: 10px;
+   margin-left: 470px;
 }
 .continue-button
 {
    color:black;
-   font-family: 'Montserrat', sans-serif;
+   /* font-family: 'Montserrat', sans-serif; */
    text-decoration: none;
    background-color: #FAB424;
    margin-left: 900px;
@@ -78,6 +79,7 @@
 {
    text-decoration: none;
    color: black;
+   font-family: 'Be Vietnam Pro', sans-serif; 
 }
 .py-4
 {
@@ -87,6 +89,9 @@
 h4
 {
    font-family: 'Raleway', sans-serif;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   margin-left: 668px;
 }
 .pt-3 :hover
 {
@@ -95,6 +100,6 @@ h4
 
 .next
 {
-   margin-left: 200px;
+   margin-left: 340px;
    height: 60px;
 }

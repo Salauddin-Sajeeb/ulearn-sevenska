@@ -39,9 +39,9 @@
 }
 .background
 {
-    background-color:#fbc556;
-    width: 650px;
-    border-radius: 5px;
+    background-color:#FCD688;
+    width: 680px;
+    border-radius: 10px;
     height: 75px;
 }
 .my-3
@@ -52,19 +52,22 @@ h4
 {
     font-family: 'Raleway', sans-serif;
 }
-h2
+h1
 {
   font-family: 'Be Vietnam Pro', sans-serif;
   color: #24344F;
 }
 .list-container
 {
-    width: 90%;
+    width: 80%;
     height: 420px;
     background-color: white;
     margin: auto;
 }
-
-    .ex-3{
+.ex-3{
         margin-left: 210px;
-    }
+}
+.mt-3{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}

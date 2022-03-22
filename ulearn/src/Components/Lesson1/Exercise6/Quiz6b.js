@@ -76,10 +76,10 @@ const Quiz6b = () => {
         <div>
             {result ? (
                 /* 4. Final Results */
-                <div className="final-results pt-5 ">
+                <div className="final-results pt-5 d-flex align-items-center">
 
                     <h2>
-                        You Scored {score}/2
+                        You scored {score}/2
                     </h2>
                     {
                         score < 4 ?
@@ -92,10 +92,9 @@ const Quiz6b = () => {
 
             ) :
                 (<div className='page-6b pt-5'>
-                    <h1 className='pt-2'>Basic Conversation-hej!</h1>
-                    <h6>Fill in the gaps for the following conversation!</h6>
+                    <h1 className='pt-2'>Fill in the gaps for the following conversation (continued) </h1>
                     <div className='audio-sec2 d-flex'>
-                        <img className='img-fluid image mx-4' src="https://i.ibb.co/27cLJbh/Whats-App-Image-2022-02-09-at-1-07-25-PM.jpg" alt=""></img>
+                        {/* <img className='img-fluid image mx-4' src="https://i.ibb.co/27cLJbh/Whats-App-Image-2022-02-09-at-1-07-25-PM.jpg" alt=""></img> */}
                         <button className='audio-button'>
                             <ReactAudioPlayer
                                 src={audio}
@@ -110,7 +109,7 @@ const Quiz6b = () => {
                         <div className='guy d-flex'>
                             <img className='guy-img' src="https://i.ibb.co/HD1Ym9w/guy.png" alt="" />
 
-                            <p className='mt-2 paragraph  '><input className='input-6b' type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
+                            <p className='mt-2 paragraph'><b><input className='input-6b' type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
 
                                 name='input1'
                                 value={inputVal.input1}
@@ -126,12 +125,12 @@ const Quiz6b = () => {
                                         setWrong1(true)
                                 }}
 
-                            /> ,<br />
-                                Goodbye!</p>
+                            />!</b><br />
+                            Goodbye!</p>
                         </div>
                         <div className="d-flex girl">
                             <div className='my-2'>
-                                <p className='mt-2 paragraph '><input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
+                                <p className='mt-2 paragraph'><b><input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
 
                                     name='input2'
                                     value={inputVal.input2}
@@ -146,8 +145,8 @@ const Quiz6b = () => {
                                             setWrong2(true)
                                     }}
 
-                                /> ! vi ses!  <br />
-                                    Bye, see you later</p>
+                                />! Vi ses!</b><br />
+                                Bye, see you later!</p>
                             </div>
                             <img className='guy-img' src="https://i.ibb.co/D8BHLmV/girl.png" alt="" />
                         </div>
@@ -158,7 +157,7 @@ const Quiz6b = () => {
                             <Button disabled={solution} className='bg-warning text-dark py-2' onClick={() => {
                                 handleOpen()
                                 setSolution(true)
-                            }}>Show Solution</Button>
+                            }}>SHOW SOLUTION</Button>
                             <Modal
 
                                 open={open}
@@ -170,8 +169,8 @@ const Quiz6b = () => {
                                 <Box sx={style}>
 
                                     <Typography id="modal-modal-description" >
-                                        The Numbers represent the position of the spaces <br />
-                                        1.hej da  <br /> 2.hej da
+                                        The numbers represent the position of the spaces <br /><br />
+                                        1. Hej då  <br /> 2. Hej då
 
                                     </Typography>
                                 </Box>

@@ -72,10 +72,10 @@ const Quiz6 = () => {
         <div>
             {result ? (
                 /* 4. Final Results */
-                <div className="final-results pt-5">
+                <div className="final-results pt-5 d-flex align-items-center">
 
                     <h2>
-                        You Scored {score}/2
+                        You scored {score}/2
                     </h2>
                     {
                         score < 4 ?
@@ -89,8 +89,8 @@ const Quiz6 = () => {
             ) :
 
                 (<div className='page-6 pt-5'>
-                    <h1 className='pt-2'>Basic Conversation-hej!</h1>
-                    <h6>Fill in the gaps for the following conversation!</h6>
+                    <h1 className='pt-2'>Fill in the gaps for the following conversation!</h1>
+                    {/* <h3>Fill in the gaps for the following conversation!</h3> */}
                     <div className='audio-sec d-flex'>
                         <button className='audio-button'>
                             <ReactAudioPlayer
@@ -99,18 +99,18 @@ const Quiz6 = () => {
                                 controls
                             />
                         </button>
-                        <img className='img-fluid image mx-5' src="https://i.ibb.co/27cLJbh/Whats-App-Image-2022-02-09-at-1-07-25-PM.jpg" alt=""></img>
+                        {/* <img className='img-fluid image mx-5' src="https://i.ibb.co/27cLJbh/Whats-App-Image-2022-02-09-at-1-07-25-PM.jpg" alt=""></img> */}
                     </div>
 
                     <div className='conversation '>
                         <div className='guy d-flex'>
                             <img className='guy-img' src="https://i.ibb.co/HD1Ym9w/guy.png" alt="" />
 
-                            <p className='mt-2 paragraph '>hejsan!kull att see! <br />
-                                Hey! Great to see you!</p>
+                            <p className='mt-2 paragraph '><b>Hejsan! Kul att ses!</b><br />
+                            Hey! Great to see you!</p>
                         </div>
                         <div className="d-flex girl">
-                            <p className='mt-2 paragraph '> <input className='input-6b' type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
+                            <p className='mt-2 paragraph '><b> <input className='input-6b' type='text' style={{ color: wrong1 ? "red" : 'green', fontWeight: "bold" }}
 
                                 name='input1'
                                 value={inputVal.input1}
@@ -126,14 +126,14 @@ const Quiz6 = () => {
                                         setWrong1(true)
                                 }}
 
-                            /> , hur mår du?  <br />
-                                Hello, how are you?</p>
+                            /> , hur mår du?</b><br />
+                            Hello, how are you?</p>
                             <img className='guy-img' src="https://i.ibb.co/D8BHLmV/girl.png" alt="" />
                         </div>
                         <div className='guy d-flex'>
                             <img className='guy-img' src="https://i.ibb.co/HD1Ym9w/guy.png" alt="" />
 
-                            <p className='mt-2 paragraph'>Jo <input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
+                            <p className='mt-2 paragraph'><b>Jo <input className='input-6b' type='text' style={{ color: wrong2 ? "red" : "green", fontWeight: "bold" }}
 
                                 name='input2'
                                 value={inputVal.input2}
@@ -148,8 +148,8 @@ const Quiz6 = () => {
                                         setWrong2(true)
                                 }}
 
-                            /> , det är bara bra <br />
-                                I'm well, thanks</p>
+                            /> , det är bara bra.</b><br />
+                            I'm well, thanks.</p>
                         </div>
                     </div>
                     <div className='hint-area d-flex '>
@@ -169,8 +169,10 @@ const Quiz6 = () => {
                                 <Box sx={style}>
 
                                     <Typography id="modal-modal-description" >
-                                        The Numbers represent the position of the spaces <br />
-                                        1.hej <br /> 2.Tack
+                                        The numbers represent the position of the spaces <br /><br />
+                                        1. Hej <br /> 2. tack 
+
+                                        <br /><br /><br /> NOTE: You can use "Hejsan" as hello as well.
 
                                     </Typography>
                                 </Box>

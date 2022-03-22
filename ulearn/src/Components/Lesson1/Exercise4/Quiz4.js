@@ -63,10 +63,10 @@ const Quiz4 = () => {
         <div>
             {result ? (
                 /* 4. Final Results */
-                <div className="final-results pt-5 ">
+                <div className="final-results pt-5 d-flex align-items-center">
 
                     <h2>
-                        You Scored {score}/10
+                        You scored {score}/10
                     </h2>
                     {
                         score < 4 ?
@@ -79,21 +79,22 @@ const Quiz4 = () => {
 
             ) : (
                 <div className='exercise-4'>
-                    <h1 className='pt-4'>Myra Granberg</h1>
+                    <h1 className='pt-4'>Choose the correct subject pronouns</h1>
+                    {/* <h3> This song is by Myra Granberg - Tills mitt hjärta går under </h3> */}
                     <div className='video'>
                         <ReactPlayer
                             url='https://www.youtube.com/watch?v=zFw-zYKO2rg'
-                            height='160px'
-                            width='530px'
+                            height='180px'
+                            width='300px'
                             controls
                         />
                     </div>
 
-                    <h4 className='mt-1 pt-5'>Fill in the gaps with the correct subject pronouns</h4>
+                    {/* <h4 className='mt-1 pt-5'>Fill in the gaps with the correct subject pronouns</h4> */}
 
                     <div className='text-area d-flex '>
                         <div className='blank-area px-3'>
-                            Baby,<input
+                            <p>Baby, <input
                                 style={{ color: !wrong[0] ? 'red' : 'green', fontWeight: "bold" }}
                                 value={ans[0]}
                                 type="text" name="one"
@@ -104,65 +105,62 @@ const Quiz4 = () => {
                                 value={ans[1]}
                                 onChange={(e) => e.preventDefault()}
                                 type="text" /> vill,
-                            Ingenting som <input
+                            <br />Ingenting som <input
                                 style={{ color: !wrong[2] ? 'red' : 'green', fontWeight: "bold" }}
                                 value={ans[2]}
-                                onChange={(e) => e.preventDefault()} type="text" />  ska tänka på
-                            Skrik till hela världen "<input
+                                onChange={(e) => e.preventDefault()} type="text" /> ska tänka på
+                            <br />Skrik till hela världen "<input
                                 style={{ color: !wrong[3] ? 'red' : 'green', fontWeight: "bold" }}
                                 value={ans[3]}
                                 onChange={(e) => e.preventDefault()} type="text" /> är min",
-                            Inget annat kommer spela roll
-                            <input
+                            <br />Inget annat kommer spela roll 
+                            <br /><input
                                 style={{ color: !wrong[4] ? 'red' : 'green', fontWeight: "bold" }}
                                 value={ans[4]}
                                 onChange={(e) => e.preventDefault()}
                                 type="text" /> har varandra, alltid tillsammans,
-                            <input
+                            <br /><input
                                 style={{ color: !wrong[5] ? 'red' : 'green', fontWeight: "bold" }}
                                 value={ans[5]}
-                                onChange={(e) => e.preventDefault()} type="text" /> vet jag går ingenstans
-                            Baby, <input
+                                onChange={(e) => e.preventDefault()} type="text" /> vet att jag går ingenstans
+                            <br />Baby, <input
                                 style={{ color: !wrong[6] ? 'red' : 'green', fontWeight: "bold" }}
                                 value={ans[6]}
                                 onChange={(e) => e.preventDefault()}
                                 type="text" /> får säga vad de vill,
-                            Ingenting som <input
+                            <br />Ingenting som <input
                                 style={{ color: !wrong[7] ? 'red' : 'green', fontWeight: "bold" }}
                                 value={ans[7]}
                                 onChange={(e) => e.preventDefault()}
                                 type="text" /> ska tänka på
 
-                            Håll min hand, snart så är <input
+                            <br /><br />Håll min hand, snart så är <input
                                 style={{ color: !wrong[8] ? 'red' : 'green', fontWeight: "bold" }}
                                 value={ans[8]}
                                 onChange={(e) => e.preventDefault()} type="text" /> långt bort
-                            Allting kommer lösa sig och
-                            I din famn, gör <input
+                            <br />Allting kommer lösa sig och
+                            <br /> I din famn, gör <input
                                 style={{ color: !wrong[9] ? 'red' : 'green', fontWeight: "bold" }}
                                 value={ans[9]}
-                                onChange={(e) => e.preventDefault()} type="text" /> vad som helst för dig
-
-
+                                onChange={(e) => e.preventDefault()} type="text" /> vad som helst för dig </p>
 
                         </div>
-                        <div className='horizontal-divider'>
+                        <div className='horizontal-divider'> </div>
 
-                        </div>
                         <div className='english-area px-3'>
-                            Baby they can say whatever they want,
-                            Nothing you should think about
-                            Scream to the whole world that “you are mine”,
-                            Nothing else will matter
-                            We have each other, always together
-                            You know I'm not going nowhere
-                            Baby, they can say whatever they want,
-                            Nothing we should think about.
+                            <p>Baby they can say whatever they want,
+                            <br />Nothing you should think about
+                            <br />Scream to the whole world that “you are mine”,
+                            <br />Nothing else will matter
+                            <br />We have each other, always together
+                            <br />You know I'm not going nowhere
+                            <br />Baby, they can say whatever they want,
+                            <br />Nothing we should think about.
 
 
-                            Take my hand, soon they are far away,
-                            Everything will turn out alright and
-                            in your arms, I will do anything for you
+                            <br /><br /><br /><br />Take my hand, soon they are far away,
+                            <br />Everything will turn out alright and
+                            <br />in your arms, I will do anything for you</p>
 
                         </div>
 
@@ -185,7 +183,7 @@ const Quiz4 = () => {
                     </div>
                     <div className='hint-area d-flex'>
                         <div className='solution pt-3'>
-                            <Button className='bg-warning text-dark py-2' onClick={handleOpen}>Show Solution</Button>
+                            <Button className='bg-warning text-dark py-2' onClick={handleOpen}>SHOW SOLUTION</Button>
                             <Modal
 
                                 open={open}
@@ -197,17 +195,17 @@ const Quiz4 = () => {
 
                                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                                         Baby, de får säga vad de vill,
-                                        Ingenting som du ska tänka på
-                                        Skrik till hela världen "Du är min",
-                                        Inget annat kommer spela roll
-                                        Vi har varandra, alltid tillsammans,
-                                        Du vet jag går ingenstans
-                                        Baby, de får säga vad de vill,
-                                        Ingenting som vi ska tänka på
+                                        <br />Ingenting som du ska tänka på
+                                        <br />Skrik till hela världen "Du är min",
+                                        <br />Inget annat kommer spela roll
+                                        <br />Vi har varandra, alltid tillsammans,
+                                        <br />Du vet att jag går ingenstans
+                                        <br />Baby, de får säga vad de vill,
+                                        <br />Ingenting som vi ska tänka på
 
-                                        Håll min hand, snart så är de långt bort
-                                        Allting kommer lösa sig och
-                                        I din famn, gör jag vad som helst för dig
+                                        <br />Håll min hand, snart så är de långt bort
+                                        <br />Allting kommer lösa sig och
+                                        <br />I din famn, gör jag vad som helst för dig
                                     </Typography>
                                 </Box>
                             </Modal>
@@ -227,7 +225,7 @@ const Quiz4 = () => {
             {result ?
                 <div className='next mt-4'>
                     <button className='continue-button  btn-lg bg-warning'>
-                        <Link className='btn-style' to='/e5'>Continue</Link>
+                        <Link className='btn-style' to='/e5'>CONTINUE</Link>
                     </button>
                 </div> : null
             }
